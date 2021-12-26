@@ -11,6 +11,9 @@ I already created github pages 2 years ago. That time I only have master branch 
 
 Throughout one og my project in developing julia package, I know more about the branch. I would use a feature branch for 
 
+relative url absolute url
+
+action in github pages
 
 
 ### Q & A
