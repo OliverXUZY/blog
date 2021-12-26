@@ -19,10 +19,7 @@ plugins:
 
 # Custom vars
 version:             1.1.0
-<<<<<<< HEAD
 google_analytics_id: UA-146052-15
-=======
-google_analytics_id: #UA-XXXX-Y
 
 # collections:
 collections:
@@ -30,4 +27,3 @@ collections:
     output: true
     permalink: /:collection/:path/ # used for access on http://localhost:4000/tutorials/highDimStat/
     
->>>>>>> master
