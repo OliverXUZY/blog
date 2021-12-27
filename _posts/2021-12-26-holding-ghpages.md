@@ -17,7 +17,7 @@ Another thing frustrated me a lot is internal link. I tried to use internal link
 
 I encounter one problem when I tried to link to page in tutorial [High Dimensional Statistics]({{ site.baseurl }}{% link _tutorials/highDimStat.md %}). I set `site.url` and `site.baseurl` accordingly, but I found decrepency between building by site locally and publishing onlie. I use localhost:4000, and locally it should be `{{site.url}}{{site.baseurl}}`. 
 
-I still have this problem. I right now use `{{ site.baseurl }}{% link _tutorials/highDimStat.md %}`. Then it showed correctly in remote as `https://oliverxuzy.github.io/blog/tutorials/highDimStat/`. But locally, when I click it goes to `http://localhost:4000/blog/blog/tutorials/highDimStat/`. I need to eliminate `/blog` inside the link.
+I still have this problem. I right now use ` site.baseurl + link _tutorials/highDimStat.md `. Then it showed correctly in remote as `https://oliverxuzy.github.io/blog/tutorials/highDimStat/`. But locally, when I click it goes to `http://localhost:4000/blog/blog/tutorials/highDimStat/`. I need to eliminate `/blog` inside the link.
 
 ### Troubleshooting
 Here are some problem bothered me much as I developed in an initial stage. I update here. I will periodically add posts in the future if I solve other problems.
