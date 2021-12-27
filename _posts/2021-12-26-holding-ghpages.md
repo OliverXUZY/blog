@@ -15,7 +15,9 @@ In this blog project(https://oliverxuzy.github.io/blog), I set another repo othe
 
 Another thing frustrated me a lot is internal link. I tried to use internal link for not only posts but [collections](https://stackoverflow.com/questions/27099427/jekyll-filename-without-date). I googled and edited the `_config.yml` file. Since I use blog repo to host instead of original link, I would edit baseurl as well(see [this](https://github.com/barryclark/jekyll-now/blob/12cb8a2e97c3b63c4bc92d2a1ab050b35bf946b7/_config.yml#L46) for example).
 
-I encounter one problem when I tried to link to page in tutorial [High Dimensional Statistics]({% link _tutorials/highDimStat.md %}). I set `site.url` and `site.baseurl` accordingly, but I found decrepency between building by site locally and publishing onlie. I use localhost:4000, and locally it should be `{{site.url}}{{site.baseurl}}`. Anyway all fixed now, we can just use {% link _tutorials/highDimStat.md %}.
+I encounter one problem when I tried to link to page in tutorial [High Dimensional Statistics]({{site.baseurl}}{% link _tutorials/highDimStat.md %}). I set `site.url` and `site.baseurl` accordingly, but I found decrepency between building by site locally and publishing onlie. I use localhost:4000, and locally it should be `{{site.url}}{{site.baseurl}}`. 
+
+I still have this problem. I right now use `{% link _tutorials/highDimStat.md %}`. Then it showed correctly in remote as `https://oliverxuzy.github.io/blog/tutorials/highDimStat/`. But locally, when I click it goes to `http://localhost:4000/blog/blog/tutorials/highDimStat/`. I need to eliminate `/blog` inside the link.
 
 
 ### Troubleshooting
