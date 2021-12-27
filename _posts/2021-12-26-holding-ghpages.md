@@ -15,6 +15,8 @@ relative url absolute url
 
 action in github pages
 
+local host for me would be localhost:4000/blog which is {{site.url}}{{site.baseurl}}
+
 
 ### Q & A
 1. why github pages not updating? an old question](https://stackoverflow.com/questions/24713112/why-does-my-github-page-do-not-update-its-content/47955695#47955695)
